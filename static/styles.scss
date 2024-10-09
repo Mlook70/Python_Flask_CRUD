@@ -1,0 +1,96 @@
+// Define variables for the theme
+$primary-color: #3f51b5;
+$secondary-color: #e0e0e0;
+$accent-color: #ff4081;
+$dark-color: #333;
+$light-color: #fff;
+$border-radius: 8px;
+$transition: 0.3s ease-in-out;
+
+body {
+font-family: 'Arial', sans-serif;
+background-color: $secondary-color;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.content {
+background-color: $light-color;
+padding: 20px;
+border-radius: $border-radius;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+max-width: 600px;
+width: 100%;
+}
+
+h1 {
+color: $primary-color;
+text-align: center;
+}
+
+form {
+display: flex;
+flex-direction: column;
+gap: 10px;
+
+input[type="text"] {
+padding: 10px;
+font-size: 1em;
+border-radius: $border-radius;
+border: 1px solid $dark-color;
+transition: $transition;
+&:focus {
+    border-color: $primary-color;
+}
+}
+
+input[type="submit"] {
+background-color: $primary-color;
+color: $light-color;
+padding: 10px;
+border: none;
+border-radius: $border-radius;
+cursor: pointer;
+font-size: 1em;
+transition: $transition;
+
+&:hover {
+    background-color: darken($primary-color, 10%);
+}
+}
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+
+th, td {
+padding: 12px;
+border-bottom: 1px solid $dark-color;
+text-align: left;
+}
+
+th {
+background-color: $primary-color;
+color: $light-color;
+}
+
+tr:nth-child(even) {
+background-color: lighten($secondary-color, 20%);
+}
+
+a {
+color: $accent-color;
+text-decoration: none;
+transition: $transition;
+
+&:hover {
+    text-decoration: underline;
+}
+}
+}

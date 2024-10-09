@@ -1,0 +1,79 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  color: #3f51b5;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form input[type=text] {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid #333;
+  transition: 0.3s ease-in-out;
+}
+form input[type=text]:focus {
+  border-color: #3f51b5;
+}
+form input[type=submit] {
+  background-color: #3f51b5;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: 0.3s ease-in-out;
+}
+form input[type=submit]:hover {
+  background-color: #32408f;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+table th, table td {
+  padding: 12px;
+  border-bottom: 1px solid #333;
+  text-align: left;
+}
+table th {
+  background-color: #3f51b5;
+  color: #fff;
+}
+table tr:nth-child(even) {
+  background-color: white;
+}
+table a {
+  color: #ff4081;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+table a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=styles.css.map */
